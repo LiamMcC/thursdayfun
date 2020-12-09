@@ -3,7 +3,49 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
+#   movies = Movie.create(
+
 #   Character.create(name: 'Luke', movie: movies.first)
 
 
+ Item.create([
+     
+     {
+    title: 'New Thing 6', 
+     description: "sdkgsgdgksd", 
+     price: 3, 
+     image_url: "liams.jpg", 
+     category:"Irons"
+         
+         
+     },
+     
+      {
+    title: 'New Thing 7', 
+     description: "sdkgsgdgksd", 
+     price: 3, 
+     image_url: "liams.jpg", 
+     category:"Irons"
+         
+         
+     },
+          {
+    title: 'New Thing 8', 
+     description: "sdkgsgdgksd", 
+     price: 3, 
+     image_url: "liams.jpg", 
+     category:"Irons"
+         
+         
+     },
+          {
+    title: 'New Thing 9', 
+     description: "sdkgsgdgksd", 
+     price: 3, 
+     image_url: "liams.jpg", 
+     category:"Irons"
+         
+         
+     },
+     
+     ])

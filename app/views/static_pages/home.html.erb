@@ -19,3 +19,19 @@
     method executes logic
     sends back to view</p>
 </div>
+
+</br></br>
+<div class="mainCont">
+    <h1>Categories</h1>
+     
+      <% @categories.each do |category| %>
+     
+     <div class="itemhols">
+         
+         <h1><%= category.title %></h1>
+        <a href="/category/<%= category.title %>"> <img src="/assets/<%= category.image %>" alt="<%= category.title %>" /> </a>
+         <p><%= category.description %></p>
+         </div>
+    
+     <% end %>
+    </div>

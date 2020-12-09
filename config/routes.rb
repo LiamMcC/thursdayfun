@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :categories
   resources :orders do
       
       resources:orderitems
@@ -13,6 +14,9 @@ Rails.application.routes.draw do
       
       resources:orders
      end 
+  
+  
+  get '/category/:title' => 'static_pages#category'
   
   get '/paid/:id' => 'static_pages#paid'
   
