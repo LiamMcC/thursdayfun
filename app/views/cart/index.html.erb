@@ -47,6 +47,8 @@
         </tr>
         
             <% total += quantity * item.price %>
+            
+            <% session[:lovelyLiam] = total %>
          <% end %>
          <tr>
             <td>Grand Total: <%= number_to_currency(total, :unit => "€") %></td>

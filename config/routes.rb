@@ -15,6 +15,10 @@ Rails.application.routes.draw do
       resources:orders
      end 
   
+  get '/makeadmin/:id' => 'static_pages#makeadmin'
+  
+  get '/removeadmin/:id' => 'static_pages#removeadmin'
+  
   
   get '/category/:title' => 'static_pages#category'
   

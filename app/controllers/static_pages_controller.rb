@@ -5,7 +5,34 @@ class StaticPagesController < ApplicationController
 
   def help
         # session[:cart] = nil
+      if current_user.admin?
+        
+      else
+        redirect_to "/" 
+      end
+        @users = User.all
+    
+        
   end
+  
+  
+  def makeadmin
+    @user = User.find_by(id: params[:id])
+     @user.update_attribute(:admin, true)
+     redirect_to "/"
+  end
+  
+  
+  def removeadmin
+      @user = User.find_by(id: params[:id])
+     @user.update_attribute(:admin, false)
+     redirect_to "/"
+  end
+  
+  
+    
+    
+    
 
   def about
     

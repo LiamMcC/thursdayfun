@@ -1,2 +1,15 @@
-<h1>StaticPages#help</h1>
-<p>Find me in app/views/static_pages/help.html.erb</p>
+<div class="itemhols">
+
+<% if current_user.admin?  %>
+<% @users.each do |user| %>
+
+<p>Id <%= user.id %></p>
+<p>Id <%= user.email %></p>
+<p>Role <%= user.admin %></p>
+<a href="/makeadmin/<%= user.id %>" class="button">Make <%= user.email %> Admin</a>
+<a href="/removeadmin/<%= user.id %>" class="button">Remove <%= user.email %> Admin</a>
+<% end %>
+
+<% end %>
+
+</div>
